@@ -1,0 +1,7 @@
+{
+    "brokerID": "0127",
+    "tdAddress": "tcp://direct.shoriental.net:18000",
+    "password": "Qiai1301",
+    "mdAddress": "tcp://direct.shoriental.net:19000",
+    "userID": "200277"
+}

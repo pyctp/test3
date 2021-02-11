@@ -1,0 +1,7 @@
+{
+    "brokerID": "3010", 
+    "tdAddress": "tcp://180.169.30.209:41205", 
+    "password": "qiai1301", 
+    "mdAddress": "tcp://180.169.30.209:41213", 
+    "userID": "08039"
+}

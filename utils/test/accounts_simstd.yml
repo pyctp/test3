@@ -1,0 +1,41 @@
+accounts: 
+    sim1
+    sim2
+    sim3
+    sim4
+    sim5
+    
+sim1:
+    broker_id: '9999'
+    investor_id: '133736'
+    passwd: QIAI1301
+    addr_md: tcp://180.168.146.187:10001
+    addr_td: tcp://180.168.146.187:10000
+
+sim2:
+    broker_id: '9999'
+    investor_id: '086038'
+    passwd: ftp123
+    addr_md: tcp://180.168.146.187:10001
+    addr_td: tcp://180.168.146.187:10000  
+
+sim3:
+    broker_id: '9999'
+    investor_id: '105686'
+    passwd: ftp123
+    addr_md: tcp://180.168.146.187:10001
+    addr_td: tcp://180.168.146.187:10000  
+
+sim4:
+    broker_id: '9999'
+    investor_id: '105877'
+    passwd: ftp123
+    addr_md: tcp://180.168.146.187:10001
+    addr_td: tcp://180.168.146.187:10000  
+
+sim5:
+    broker_id: '9999'
+    investor_id: '116649'
+    passwd: ftp123
+    addr_md: tcp://180.168.146.187:10001
+    addr_td: tcp://180.168.146.187:10000 
