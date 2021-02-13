@@ -78,7 +78,7 @@ def tickDataReplay():
                 time.sleep(1)
 
 
-def barDataReplay(barfile=r"./data/bar/rb/rb1905_780.json"):
+def barDataReplay(barfile=r"./data/bar/rb/rb1905_300.json"):
     barfile = barfile
 
     with open(barfile, 'r') as f:
@@ -135,6 +135,8 @@ def today():
 
 
 def dingdangNo6():
+    st = time.time()
+
     lastsig = ''
     initFund = 500000
     fundNow = initFund
@@ -249,9 +251,9 @@ def dingdangNo6():
             #     f.writelines(json.dumps(bar, ensure_ascii=False) + '\n')
 
             # print len(bars[barinterval])
-
+            ed = time.time()
             lastk = get_last_k_line(bars, inst, granularity)
-            print(lastk, len(bars[barinterval]))
+            print(lastk, len(bars[barinterval]), ed-st)
 
             O = get_k_line_column(bars, inst, granularity, ohlc='open')
             H = get_k_line_column(bars, inst, granularity, ohlc='high')
@@ -422,6 +424,13 @@ def dingdangNo6():
                 sigAllReal.append(sigReal)
 
             elif getoutlist[-1]:
+                sigReal = {'date_time': dt, 'signaltype': signal['signaltype'], 'signalprice': C[-1],
+                           'pos': signal['pos']}
+                # if len(sigAllReal)>1 and sigAllReal[-1]['signaltype']==sigReal['signalprice']:
+                #     continue
+                # else:
+
+                sigAllReal.append(sigReal)
                 sigNow = sigAllReal[-1]
                 sigNow1 = sigReal
 
